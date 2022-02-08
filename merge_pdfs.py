@@ -4,8 +4,6 @@ from os.path import isfile, join
 from PyPDF2 import PdfFileMerger, PdfFileReader
 
 def merge_files(pdfs_path):
-  from os import listdir
-  from os.path import isfile, join
   filenames = [f for f in listdir(pdfs_path) if isfile(join(pdfs_path, f))]
   pdf_files = [f for f in filenames if 'pdf' in f]
   pdf_files.sort()
