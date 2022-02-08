@@ -10,7 +10,7 @@ def merge_files(pdfs_path):
   pdf_files = [f for f in filenames if 'pdf' in f]
   pdf_files.sort()
   
-  print(f'Merging: {pdf_files}')
+  print(f'Merging in the following order: {pdf_files}')
   pdf_file_merger = PdfFileMerger() 
 
   output_name = f'{pdfs_path.replace("/", "") + "_merged.pdf"}'
